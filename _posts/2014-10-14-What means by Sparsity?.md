@@ -15,9 +15,9 @@ First of all, I want to clarify two types of data sparsity[^1].
 1. Paucity of dataset particular training data.
 2. High dimension feature space and only few dimensions are informative for each instance.
 
-**Paucity of training data**: Take the [Netflix Prize][2] dataset as example again. The large proportion of missing ratings makes recovering the user-movie matrix more challenging. The sparsity ratio, $$$\frac{\#observerd}{\# user \times \# movies}$$$, is always utilized how sparse the dataset is. Lee, J[^2] provides an empirical analysis the relation between performance and density/sparisty. The insufficient training data situaiton is quite common.
+**Paucity of training data**: Take the [Netflix Prize][2] dataset as example again. The large proportion of missing ratings makes recovering the user-movie matrix more challenging. The sparsity ratio, $$\frac{\#observerd}{\# user \times \# movies}$$, is always utilized how sparse the dataset is. Lee, J[^2] provides an empirical analysis the relation between performance and density/sparisty. The insufficient training data situaiton is quite common.
 
-**High dimension feature space**: Take the linear classifier for binary classification as example. As we known, the VC dimension of linear classifier is $$$O(d)$$$ where $$$d$$$ is feature dimension. As the dimension increase, the number of instance is required to grow as well. 
+**High dimension feature space**: Take the linear classifier for binary classification as example. As we known, the VC dimension of linear classifier is $$O(d)$$ where $$d$$ is feature dimension. As the dimension increase, the number of instance is required to grow as well. 
 
 The high dimensionality also results in some other problems known as **curse of dimensionality**. The sparsity is only one of consequences of curse of dimension. The distance becomes meaningless as dimension increase. However, the discusion of curse of dimension is beyond this post.
 
@@ -25,10 +25,10 @@ In text mining, bag of word is always utilized to represent each domument like t
 
 $$[0,1,0,0,0\dots,0,0,0,\dots,1,0,\dots]$$
 
-We usually call such instance sparse caused only few entries are non-zero. However, such understanding is quite on the surface. As I actually cannot explain the difference between $$$[0,1,0,0,1]$$$ and $$$[1,2,1,1,2]$$$. However, the latter one will not be called sparse. Duchi, J.[^3] provides a formal condition for sparse as 
+We usually call such instance sparse caused only few entries are non-zero. However, such understanding is quite on the surface. As I actually cannot explain the difference between $$[0,1,0,0,1]$$ and $$[1,2,1,1,2]$$. However, the latter one will not be called sparse. Duchi, J.[^3] provides a formal condition for sparse as 
 $$\text{for convex loss function } f,supp(f) \subset supp(\nabla f)$$
 
-From intuitive perspective, such condition means that the $$$i\_{th}$$$ of instance dimension $$$x$$$ is zero $$$x_i=0$$$, then the gradient with respect to $$$x_i$$$ is deemed to be zero. Consider using stochastic gradient descent to learn the model. The instance with sparse features $$$x_i=0$$$ will not update $$$i\_{th}$$$ dimension at all. Duchi, 
+From intuitive perspective, such condition means that the $$i\_{th}$$ of instance dimension $$x$$ is zero $$x_i=0$$, then the gradient with respect to $$x_i$$ is deemed to be zero. Consider using stochastic gradient descent to learn the model. The instance with sparse features $$x_i=0$$ will not update $$i\_{th}$$ dimension at all. Duchi, 
 
 J.[^3] also provides an analysis of stochastic optimization on such sparse data. When learning on such sparse dataset, we would like to learn an dense model rather than sparse model(assumption). Such assmption leads much harder to learn model on sparse data.
 
@@ -52,6 +52,8 @@ There exist quite a lot definition or understanding of data sparsity. As far as 
 [1]: http://stats.stackexchange.com/questions/113318/the-name-data-sparsity-in-different-applications "Cross Validated"
 [2]: http://en.wikipedia.org/wiki/Netflix_Prize
 [3]:http://math.stackexchange.com/questions/283006/what-is-a-sampling-density-why-is-the-sampling-density-proportional-to-n-fra 
+
+---
 
 [^1]:David Donoho, Sparsity in Modern High-Dimensional Statistics, SAMSI Astrostatistics. 20,9,2012
 [^2]: Lee, J., Sun, M., & Lebanon, G. (2012). A comparative study of collaborative filtering algorithms. arXiv preprint arXiv:1205.3193.
