@@ -17,13 +17,12 @@ Some very important topics in differential privacy machine learning containing i
 is not covered in this slides.
 
 
-The slides: [click here][2]
-
-
+The slides: click here [2]
 
 
 ----
 Referenecs:
 
 [1] Ji, Z., Lipton, Z. C., & Elkan, C. (2014). Differential Privacy and Machine Learning: a Survey and Review. Learning; Cryptography and Security; Databases.
-[2]:https://github.com/boliu68/boliu68.github.io/blob/master/res/differential_privacy_machine_learing.pdf?raw=true
+
+[2]: https://github.com/boliu68/boliu68.github.io/blob/master/res/differential_privacy_machine_learing.pdf?raw=true
