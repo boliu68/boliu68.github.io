@@ -1,10 +1,10 @@
 ---
 layout: post
-categories: [RecSys, Transfer, Readlist]
+title: Readlist of Cross-Domain Collaborative Filtering
+modified: 2014-11-19
+tags: [RecSys Transfer Readlist]
 ---
 
-#Readlist of Cross-Domain Collaborative Filtering
----
 ❏ Transfer RecSys
 This lists the paper recently I plan to read. The majority of the following papers covers Cross-Domain Collaborative Filtering(CDCF).
 

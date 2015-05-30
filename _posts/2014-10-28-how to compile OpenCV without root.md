@@ -1,9 +1,8 @@
 ---
 layout: post
-categories: [Tech, Linux]
----
-
-#How to compile opencv on linux without root
+title: How to compile opencv on linux without root
+modified: 2014-10-28
+tags: [tools opencv]
 ---
 
 ##update Cmake

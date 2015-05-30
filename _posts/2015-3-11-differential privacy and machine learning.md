@@ -1,10 +1,8 @@
 ---
 layout: post
-categories: [survey, privacy, dp]
-
----
-
-#Differential Privacy and Machine Learning
+title: Differential Privacy and Machine Learning
+modified: 2015-3-11
+tags: [survey privacy dp]
 ---
 
 As a begining of my research, I survey the topics on differential privacy and machine learning. The basic structure of this slide is arised from [1].

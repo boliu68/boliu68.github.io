@@ -1,11 +1,9 @@
 ---
 layout: post
-categories: [survey, sparsity]
-
+title: What mean by sparsity?
+modified: 2014-10-14
+tags: [survey sparsity]
 ---
-
-#What mean by sparsity?
-
 
 In machine learning area, we hear a lot about sparsity such as compressed sensing, sparse coding, data sparsity and so on. Amongst, I am particular interested in data sparsity. In recommender system, the large proportion of missing ratings is called sparsity. On the other hand, the bag of word(BoG) represented document dataset is also named sparse data. What exactly means by sparsity is the fundamental problem for us to understand as well as utilize data sparsity. My original confusion is posted on [Cross Validated][1].
 
