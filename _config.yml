@@ -10,7 +10,7 @@ url: http://boliu68.github.io
 # Owner/author information
 owner:
   name:           Bo Liu
-  avatar:         
+  avatar:         head.jpg
   bio:            "Machine Learning, PhD student"
   email:          6liubo8@gmail.com
   # Social networking links used in footer. Update and remove as you like.
@@ -18,12 +18,12 @@ owner:
   facebook:       
   github:         
   stackexchange:  
-  linkedin:       
+  linkedin: https://hk.linkedin.com/pub/bo-brody-liu/55/52b/10b
   instagram:      
   flickr:         
   tumblr:         
   # google plus id, include the '+', eg +mmistakes
-  google_plus:    +yourid
+  google_plus:
 
 # Background image to be tiled on all pages
 background: 
