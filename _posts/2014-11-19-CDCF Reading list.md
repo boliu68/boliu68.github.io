@@ -2,7 +2,7 @@
 layout: post
 title: Readlist of Cross-Domain Collaborative Filtering
 modified: 2014-11-19
-tags: [RecSys Transfer Readlist]
+tags: [recsys, transfer, readlist]
 ---
 
 ❏ Transfer RecSys

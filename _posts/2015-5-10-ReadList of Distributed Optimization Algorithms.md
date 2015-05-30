@@ -2,7 +2,7 @@
 layout: post
 title: Readlist of Distributed Optimization Algorithm
 modified: 2015-5-10
-tags: [survey readlist]
+tags: [survey, readlist]
 ---
 
 

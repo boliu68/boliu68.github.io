@@ -2,7 +2,7 @@
 layout: post
 title: LR, Spark, SGD and Big Data
 modified: 2014-12-4
-tags: [Algorithm, Machine Learning]
+tags: [algorithm, machine learning]
 ---
 
 Logistic Regression([LR][1]) serves as a simple but competitive algorithm for classifiation. LR is effective to train and widely utilized online for recommendation, ads and rankings. In this blog, I will demonstrate my experience of LR algorithm based on Stochastic Gradient Descent([SGD][2]), [Spark][3] for quite big dataset. The method is based on python. Some python packages such as numpy, scipy as well as sklearn is utlized for efficiency. It will not be difficult to transfer to other platform, in my opinion.
