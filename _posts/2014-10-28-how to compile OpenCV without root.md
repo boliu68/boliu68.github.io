@@ -20,9 +20,9 @@ tags: [tools, opencv]
 3. cmake(execute the newly installed cmake using direct path)
 
 The command(do not ignore **..**):
-	
+
 	cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=my_location -D BUILD_NEW_PYTHON_SUPPORT=ON ..
-	
+
 4. make
 
 5. make install
