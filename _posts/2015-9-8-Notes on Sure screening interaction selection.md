@@ -1,3 +1,10 @@
+---
+layout: post
+title: Notes on Sure Screening interaction selection
+modified: 2015-9-10
+tags: [references, sure screening, interaction selection]
+---
+
 #### Lee, S., Lozano, A., Kambadur, P., & Xing, E. P. (2015, April). An Efficient Nonlinear Regression Approach for Genome-Wide Detection of Marginal and Interacting Genetic Variations.
 
 - Summary in my own understanding:
