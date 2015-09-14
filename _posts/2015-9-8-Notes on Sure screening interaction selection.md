@@ -38,9 +38,7 @@ $$
 
 - The min and max eigenvalue of covariance if bounded.
 
-$$
-\tau_1\leq \lambda_{min}(\Sigma_k)\leq\lambda_{max}(\Sigma_k)\leq\tau_p
-$$
+$$\tau_1\leq \lambda_{min}(\Sigma_k)\leq\lambda_{max}(\Sigma_k)\leq\tau_p$$
 
 - The variance of different class can be distinguished.
 - $$\Sigma_1^{-1}$$ and $$\Sigma_2^{-1}$$ are both $$K_p$$ sparse. And $$l_\infty(\Sigma_k^{-1})$$ is bounded.
