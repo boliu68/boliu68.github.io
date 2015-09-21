@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://boliu68.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://boliu68.github.io" />
-<updated>2015-09-14T04:12:49-04:00</updated>
+<updated>2015-09-15T04:33:57-04:00</updated>
 <id>http://boliu68.github.io/</id>
 <author>
   <name>Bo Liu</name>
@@ -400,7 +400,9 @@ This lists the paper recently I plan to read. The majority of the following pape
     <email>6liubo8@gmail.com</email>
   </author>
   <content type="html">
-    &lt;p&gt;In machine learning area, we hear a lot about sparsity such as compressed sensing, sparse coding, data sparsity and so on. Amongst, I am particular interested in data sparsity. In recommender system, the large proportion of missing ratings is called sparsity. On the other hand, the bag of word(BoG) represented document dataset is also named sparse data. What exactly means by sparsity is the fundamental problem for us to understand as well as utilize data sparsity. My original confusion is posted on &lt;a href=&quot;http://stats.stackexchange.com/questions/113318/the-name-data-sparsity-in-different-applications&quot; title=&quot;Cross Validated&quot;&gt;Cross Validated&lt;/a&gt;.&lt;/p&gt;
+    &lt;p&gt;What mean by sparsity?&lt;/p&gt;
+
+&lt;p&gt;In machine learning area, we hear a lot about sparsity such as compressed sensing, sparse coding, data sparsity and so on. Amongst, I am particular interested in data sparsity. In recommender system, the large proportion of missing ratings is called sparsity. On the other hand, the bag of word(BoG) represented document dataset is also named sparse data. What exactly means by sparsity is the fundamental problem for us to understand as well as utilize data sparsity. My original confusion is posted on &lt;a href=&quot;http://stats.stackexchange.com/questions/113318/the-name-data-sparsity-in-different-applications&quot; title=&quot;Cross Validated&quot;&gt;Cross Validated&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;In this blog, I hope to list the taxonomy and several definition from very intuitive perspective. Moreover, I would like to emphasize that this blog only talks about sparse data instead of sparse learning. The object method aims at learning a sparse parameter.&lt;/p&gt;
 
@@ -421,7 +423,7 @@ This lists the paper recently I plan to read. The majority of the following pape
 
 &lt;p&gt;\[[0,1,0,0,0\dots,0,0,0,\dots,1,0,\dots]\]&lt;/p&gt;
 
-&lt;p&gt;We usually call such instance sparse caused only few entries are non-zero. However, such understanding is quite on the surface. As I actually cannot explain the difference between &lt;script type=&quot;math/tex&quot;&gt;[0,1,0,0,1]&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;[1,2,1,1,2]$.&lt;/script&gt; However, the latter one will not be called sparse. Duchi, J.&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; provides a formal condition for sparse as 
+&lt;p&gt;We usually call such instance sparse caused only few entries are non-zero. However, such understanding is quite on the surface. As I actually cannot explain the difference between &lt;script type=&quot;math/tex&quot;&gt;[0,1,0,0,1]&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;[1,2,1,1,2]$.&lt;/script&gt; However, the latter one will not be called sparse. Duchi, J.&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; provides a formal condition for sparse as
 \[\text{for convex loss function } f,supp(f) \subset supp(\nabla f)\]&lt;/p&gt;
 
 &lt;p&gt;From intuitive perspective, such condition means that the &lt;script type=&quot;math/tex&quot;&gt;i\_{th}&lt;/script&gt; of instance dimension &lt;script type=&quot;math/tex&quot;&gt;x&lt;/script&gt; is zero &lt;script type=&quot;math/tex&quot;&gt;x_i=0&lt;/script&gt;, then the gradient with respect to &lt;script type=&quot;math/tex&quot;&gt;x_i&lt;/script&gt; is deemed to be zero. Consider using stochastic gradient descent to learn the model. The instance with sparse features $x_i=0$ will not update &lt;script type=&quot;math/tex&quot;&gt;i\_{th}&lt;/script&gt; dimension at all. Duchi,&lt;/p&gt;
