@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Your New Jekyll Site - What mean by sparsity?</title>
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="alternate" type="application/rss+xml" title="My Blog" href="/rss.xml">
+  <link rel="stylesheet" href="/assets/css/highlight.css">
+</head>
+<body>
+
+  <nav class="main-nav">
+    
+        <a href="/"> <span class="arrow">←</span> Home </a>
+    
+
+    
+        
+            <a href="/about">About </a>
+        
+    
+    <a class="cta" href="/feed.xml">Subscribe</a>
+</nav>
+
+  
+
+  <section id="wrapper" class="">
+    <article class="post">
+    <header>
+        <h1>What mean by sparsity?</h1>
+        <h2 class="headline">October 14, 2014</h2>
+    </header>
+    <section id="post-body">
+        <p>What mean by sparsity?</p>
+
+<p>In machine learning area, we hear a lot about sparsity such as compressed sensing, sparse coding, data sparsity and so on. Amongst, I am particular interested in data sparsity. In recommender system, the large proportion of missing ratings is called sparsity. On the other hand, the bag of word(BoG) represented document dataset is also named sparse data. What exactly means by sparsity is the fundamental problem for us to understand as well as utilize data sparsity. My original confusion is posted on <a href="http://stats.stackexchange.com/questions/113318/the-name-data-sparsity-in-different-applications" title="Cross Validated">Cross Validated</a>.</p>
+
+<p>In this blog, I hope to list the taxonomy and several definition from very intuitive perspective. Moreover, I would like to emphasize that this blog only talks about sparse data instead of sparse learning. The object method aims at learning a sparse parameter.</p>
+
+<p>First of all, I want to clarify two types of data sparsity<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.</p>
+
+<ol>
+  <li>Paucity of dataset particular training data.</li>
+  <li>High dimension feature space and only few dimensions are informative for each instance.</li>
+</ol>
+
+<p><strong>Paucity of training data</strong>: Take the <a href="http://en.wikipedia.org/wiki/Netflix_Prize">Netflix Prize</a> dataset as example again. The large proportion of missing ratings makes recovering the user-movie matrix more challenging. The sparsity ratio, <script type="math/tex">\frac{\#observerd}{\# user \times \# movies}</script>, is always utilized how sparse the dataset is. Lee, J<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup> provides an empirical analysis the relation between performance and density/sparisty. The insufficient training data situaiton is quite common.</p>
+
+<p><strong>High dimension feature space</strong>: Take the linear classifier for binary classification as example. As we known, the VC dimension of linear classifier is <script type="math/tex">O(d)</script> where <script type="math/tex">d</script> is feature dimension. As the dimension increase, the number of instance is required to grow as well.</p>
+
+<p>The high dimensionality also results in some other problems known as <strong>curse of dimensionality</strong>. The sparsity is only one of consequences of curse of dimension. The distance becomes meaningless as dimension increase. However, the discusion of curse of dimension is beyond this post.</p>
+
+<p>In text mining, bag of word is always utilized to represent each domument like the following.</p>
+
+<p>\[[0,1,0,0,0\dots,0,0,0,\dots,1,0,\dots]\]</p>
+
+<p>We usually call such instance sparse caused only few entries are non-zero. However, such understanding is quite on the surface. As I actually cannot explain the difference between <script type="math/tex">[0,1,0,0,1]</script> and <script type="math/tex">[1,2,1,1,2]$.</script> However, the latter one will not be called sparse. Duchi, J.<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup> provides a formal condition for sparse as
+\[\text{for convex loss function } f,supp(f) \subset supp(\nabla f)\]</p>
+
+<p>From intuitive perspective, such condition means that the <script type="math/tex">i\_{th}</script> of instance dimension <script type="math/tex">x</script> is zero <script type="math/tex">x_i=0</script>, then the gradient with respect to <script type="math/tex">x_i</script> is deemed to be zero. Consider using stochastic gradient descent to learn the model. The instance with sparse features $x_i=0$ will not update <script type="math/tex">i\_{th}</script> dimension at all. Duchi,</p>
+
+<p>J.<sup id="fnref:3:1"><a href="#fn:3" class="footnote">3</a></sup> also provides an analysis of stochastic optimization on such sparse data. When learning on such sparse dataset, we would like to learn an dense model rather than sparse model(assumption). Such assmption leads much harder to learn model on sparse data.</p>
+
+<p><strong>Other definition</strong></p>
+
+<p>At the very begining of my survey. I always try to make an uniform definition for the above two type of sparsity. Actually, there indeed exist some common parts.</p>
+
+<ol>
+  <li>Both the paucity of training data and high dimension will cause the average distance between each data point large.</li>
+  <li>The <a href="http://math.stackexchange.com/questions/283006/what-is-a-sampling-density-why-is-the-sampling-density-proportional-to-n-fra">sample density</a> is also tried to measure the sparsity.</li>
+</ol>
+
+<p>In the following, I try to quote several “definition” in other references.</p>
+
+<ol>
+  <li>
+    <blockquote>
+      <p>Data sparsity refers to the difficulty in finding sufficient reliable similar users since in general the active users only rated a small portion of items<sup id="fnref:5"><a href="#fn:5" class="footnote">4</a></sup></p>
+    </blockquote>
+  </li>
+  <li>
+    <blockquote>
+      <p>data sparsity problem occus in the setting of supervised statistical learning method, when some data from the test side is not present in the training dataset. <sup id="fnref:6"><a href="#fn:6" class="footnote">5</a></sup></p>
+    </blockquote>
+  </li>
+  <li>
+    <blockquote>
+      <p>when the training data is relatively sparse in this domain, either because few observations are available for learning or because the underlying structure is complex, the bias inherent in popular pruning methods is inappropriate and they have a negative effect on predictive accuracy<sup id="fnref:4"><a href="#fn:4" class="footnote">6</a></sup>.</p>
+    </blockquote>
+  </li>
+  <li>
+    <blockquote>
+      <p>One way to think of sparsity is how space is empty (60%), whereas 40% of space is dense, or filled. So good data looks like swiss cheese.  Big bubbles of nothing<sup id="fnref:7"><a href="#fn:7" class="footnote">7</a></sup>!</p>
+    </blockquote>
+  </li>
+</ol>
+
+<p>There exist quite a lot definition or understanding of data sparsity. As far as I have survied, I do not find a very persuasive and comprehensive work to clarify all of these definitions.</p>
+
+<h2 id="references">References</h2>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>David Donoho, Sparsity in Modern High-Dimensional Statistics, SAMSI Astrostatistics. 20,9,2012 <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>Lee, J., Sun, M., &amp; Lebanon, G. (2012). A comparative study of collaborative filtering algorithms. arXiv preprint arXiv:1205.3193. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>Duchi, J., Jordan, M., &amp; McMahan, B. (2013). Estimation, optimization, and parallelism when data is sparse. In Advances in Neural Information Processing Systems (pp. 2832-2840). <a href="#fnref:3" class="reversefootnote">&#8617;</a> <a href="#fnref:3:1" class="reversefootnote">&#8617;<sup>2</sup></a></p>
+    </li>
+    <li id="fn:5">
+      <p>Guo, G. (2013, August). Improving the performance of recommender systems by alleviating the data sparsity and cold start problems. In Proceedings of the Twenty-Third international joint conference on Artificial Intelligence (pp. 3217-3218). AAAI Press. <a href="#fnref:5" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:6">
+      <p>Ricci, F., Rokach, L., &amp; Shapira, B. (2011). Introduction to recommender systems handbook (pp. 1-35). Springer US. <a href="#fnref:6" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p>when the training data is relatively sparse in this domain, either because few observations are available for learning or because the underlying structure is complex, the bias inherent in popular pruning methods is inappropriate and they have a negative effect on predictive accuracy. <a href="#fnref:4" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:7">
+      <p>http://www.quora.com/What-is-a-clear-explanation-of-data-sparsity <a href="#fnref:7" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+    </section>
+</article>
+<footer id="post-meta" class="clearfix">
+    <a href="http://twitter.com/YourTwitterUsername">
+        <img class="avatar" src="/assets/images/avatar.png">
+        <div>
+            <span class="dark">Your Name</span>
+            <span>Blogging about stuffs</span>
+        </div>
+    </a>
+
+    <section id="sharing">
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=http://yourblog-domain.com/2014/What%20means%20by%20Sparsity%3F/ - What mean by sparsity? by @YourTwitterUsername"><span class="icon-twitter"> Tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+    </section>
+</footer>
+
+<!-- Disqus comments -->
+
+
+<!-- Archive post list -->
+
+    <ul id="post-list" class="archive readmore">
+        <h3>Read more</h3>
+        
+            <li>
+                <a href="/2015/Savage's%20approach%20to%20research/">Savage's approach to research<aside class="dates">Sep 10</aside></a>
+            </li>
+        
+            <li>
+                <a href="/2015/Notes%20on%20Sure%20screening%20interaction%20selection/">Notes on Sure Screening interaction selection<aside class="dates">Sep 08</aside></a>
+            </li>
+        
+            <li>
+                <a href="/2015/ReadList%20of%20Distributed%20Optimization%20Algorithms/">Readlist of Distributed Optimization Algorithm<aside class="dates">May 10</aside></a>
+            </li>
+        
+            <li>
+                <a href="/2015/differential%20privacy%20and%20machine%20learning/">Differential Privacy and Machine Learning<aside class="dates">Mar 11</aside></a>
+            </li>
+        
+            <li>
+                <a href="/2014/LR,%20Spark,%20SGD%20and%20Big%20Data/">LR, Spark, SGD and Big Data<aside class="dates">Dec 04</aside></a>
+            </li>
+        
+            <li>
+                <a href="/2014/CDCF%20Reading%20list/">Readlist of Cross-Domain Collaborative Filtering<aside class="dates">Nov 19</aside></a>
+            </li>
+        
+            <li>
+                <a href="/2014/how%20to%20compile%20OpenCV%20without%20root/">How to compile opencv on linux without root<aside class="dates">Oct 28</aside></a>
+            </li>
+        
+            <li>
+                <a href="/2014/What%20means%20by%20Sparsity%3F/">What mean by sparsity?<aside class="dates">Oct 14</aside></a>
+            </li>
+        
+    </ul>
+
+
+
+
+
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/highlight.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-XXXXXXXX-X', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>
+
+
+
