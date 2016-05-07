@@ -1,3 +1,12 @@
+---
+layout: post
+title: 我的Workflow [iOS]
+modified: 2016-5-8
+tags: [tools]
+---
+
+
+
 最近购买了iOS上的workflow app。喜欢折腾的我尝试create了几个workflow来解决使用iOS期间的小麻烦。以后自己的workflow都积累在这里。希望可以帮助到你解决类似的麻烦。
 
 1. 拨打香港、大陆电话。
