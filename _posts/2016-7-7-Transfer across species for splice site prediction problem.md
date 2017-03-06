@@ -1,5 +1,5 @@
 ---
-layout: postn
+layout: post
 title: Transfer across species for splice site prediction problem
 modified: 2016-7-7
 tags: [Transfer learning, bioinformatics]
