@@ -19,10 +19,9 @@ Compared to one-state RL, i.e. multi-armed bandit. MDP explores not only the sto
 Multi-armed bandit is widely applied to online recommendation to make personlized article recommenation [Li, Lihong]. Intuitively, user interests change very quickly. For instance, one user are highly unlikely to buy a Playstation 4 if have already bought one. As a result, it seems that modeling recommendation as MDP or POMDP is more suitable than bandit problem. 
 
 However, in my opinion, MDP and bandit focus on exploring different elements and do not conflict. We take Q-Learning as example as shown in Fig. 4. I suppose that line 7 explores the state transition. If we always select the action with maximum expected reward in each time step, Q-learning is equivalent to pure exploitation. Pure exploitation can stuck in suboptimal actions for stochastic rewards. For instance, in state $$s_1$$ with two actions, a randomly generated large reward may mislead the policy and stuck in suboptimal action. As a result, in Line 5, Q-Learning select the actions using $$\epsilon-greedy$$ which is most basic bandit policy.  
-![Fig. 4 Q-learning]({{site.baseurl}}/https://webdocs.cs.ualberta.ca/~sutton/book/ebook/pseudotmp9.png)
+![Fig. 4 Q-learning]({{site.baseurl}}/webdocs.cs.ualberta.ca/~sutton/book/ebook/pseudotmp9.png)
 
 For online recommender system, in my opinion, (PO)MDP focuses on exploring user interests change and bandit focuses on exploring stochastic reward. (PO)MDP and bandit combined should lead to a better result.
 
 1. Zhou, Li. "A survey on contextual multi-armed bandits." CoRR, abs/1508.03326 (2015).
 2. Li, Lihong, et al. "A contextual-bandit approach to personalized news article recommendation." Proceedings of the 19th international conference on World wide web. ACM, 2010.
-
