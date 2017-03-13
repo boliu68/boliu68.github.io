@@ -8,7 +8,7 @@ markdown: kramdown
 highlighter: rouge
 
 paginate: 20
-baseurl: 
+baseurl: '/'
 domain_name: 'http://boliu68.github.io/'
 google_analytics: 'UA-67871118-1'
 disqus: True
