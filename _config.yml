@@ -8,14 +8,14 @@ markdown: kramdown
 highlighter: rouge
 
 paginate: 20
-baseurl: /
-domain_name: 'http://boliu68.github.io/'
+baseurl: '/'
+domain_name: 'https://boliu68.github.io/'
 google_analytics: 'UA-67871118-1'
 disqus: True
 disqus_shortname: 'boliu68githubio'
 
 # Details for the RSS feed generator
-url:            'http://boliu68.github.io/'
+url:            'https://boliu68.github.io/'
 author:         'Bo Liu'
 authorTwitter:  'YourTwitterUsername'
 
