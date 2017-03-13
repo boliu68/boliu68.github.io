@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 ## Reinforcement Learning versus Bandit
 
