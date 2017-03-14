@@ -1,8 +1,11 @@
 ---
 layout: post
 title: How to compile opencv on linux without root
-modified: 2014-10-28
-tags: [tools, opencv]
+modified: {}
+tags:
+  - tools
+  - opencv
+published: true
 ---
 
 ##update Cmake
@@ -23,8 +26,8 @@ The command(do not ignore **..**):
 
 	cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=my_location -D BUILD_NEW_PYTHON_SUPPORT=ON ..
 
-4. make
 
+4. make
 5. make install
 6. Guarantee that python2.7 folder is generated in lib.
 7. config the environment.
