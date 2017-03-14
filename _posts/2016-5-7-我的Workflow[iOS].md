@@ -1,8 +1,10 @@
 ---
 layout: post
-title: 我的Workflow [iOS]
+title: '我的Workflow [iOS]'
 modified: 2016-5-8
-tags: [tools]
+tags:
+  - tools
+published: true
 ---
 
 
@@ -11,9 +13,6 @@ tags: [tools]
 
 1. 拨打香港、大陆电话。
 
-   * 在iOS系统内复制电话号码前加拨区号十分麻烦。经常要大脑记住电话号码，然后输入其中。这个workflow截取剪贴板或者输入的电话号码。通过询问拨打给大陆还是香港来决定加拨何种区号。
+在iOS系统内复制电话号码前加拨区号十分麻烦。经常要大脑记住电话号码，然后输入其中。这个workflow截取剪贴板或者输入的电话号码。通过询问拨打给大陆还是香港来决定加拨何种区号。
 
      [link](https://workflow.is/workflows/4f79d85831624760b1101a4da96ed8fd)
-
-
-
