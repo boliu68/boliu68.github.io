@@ -1,8 +1,11 @@
 ---
 layout: post
-title: LR, Spark, SGD and Big Data
+title: 'LR, Spark, SGD and Big Data'
 modified: 2014-12-4
-tags: [algorithm, machine learning]
+tags:
+  - algorithm
+  - machine learning
+published: true
 ---
 
 Logistic Regression([LR][1]) serves as a simple but competitive algorithm for classifiation. LR is effective to train and widely utilized online for recommendation, ads and rankings. In this blog, I will demonstrate my experience of LR algorithm based on Stochastic Gradient Descent([SGD][2]), [Spark][3] for quite big dataset. The method is based on python. Some python packages such as numpy, scipy as well as sklearn is utlized for efficiency. It will not be difficult to transfer to other platform, in my opinion.
@@ -41,7 +44,7 @@ Storage.MEMORY_AND_DISK is suggested in my opinion to persist. Intuitively, this
 
 **Line 11**: I just call sklearn.linear_model.SGDClassifier to do SGD in each partitions. No doubt that you can implement one yourself which should be more fun. 
 
-One of biggest challenge here is that the high-dimension(10e8) parameters vectors obtained from each partitions has to be averaged. Calling sum(), reduce() lead to calling a collect(). This means, in my experiment, collecting 100GB sparse vector back to master. Obviously, this is not acceptable. As a result, for $$w_i$$ obtain in partition $$i$$, I partition $$w_i$$ to #parallesim. For instance $$w_i \rightarrow (1,w\_{i,1}), (2,w\_{i,2})\dots(k,w\_{i,k})$$. $$k$$ denotes the k which is identical for all the partitions. Afterwards, reduceByKey is called to sum up all the resul and only one parameter vector is collected back.
+One of biggest challenge here is that the high-dimension(10e8) parameters vectors obtained from each partitions has to be averaged. Calling sum(), reduce() lead to calling a collect(). This means, in my experiment, collecting 100GB sparse vector back to master. Obviously, this is not acceptable. As a result, for $$w_i$$ obtain in partition $$i$$, I partition $$w_i$$ to #parallesim. For instance $$w_i \rightarrow (1,w_{i,1}), (2,w_{i,2})\dots(k,w_{i,k})$$. $$k$$ denotes the k which is identical for all the partitions. Afterwards, reduceByKey is called to sum up all the resul and only one parameter vector is collected back.
 
 Furthermore, a serious side effect is that we change the key in doing the above trick. And each time, for instance, 100GB(400 partitions * 300MB sparse vector) hash to be shuffled and write to disk. For really many times, my disk is running out. I try to compress the shuffle by flush the shuffle files to hdfs. But both does not work well. 
 
