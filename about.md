@@ -23,7 +23,6 @@ I am a PhD candidate from the Hong Kong University of Science and Technology und
 - Kaixiang Mo, Bo Liu, Lei Xiao, Yong Li, Jie Jiang, Image Feature Learning for Cold Start Problem in Display Advertising. IJCAI 2015.
 - Ying Wei, Yangqiu Song, Yi Zhen, Bo Liu, Qiang Yang, Scalable heterogeneous translated hashing. KDD 2014.
 
-
 ## Experience
 
 - 2015-2017: Teaching Assistant Coordinator of CSE department.
