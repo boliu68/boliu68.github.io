@@ -42,10 +42,10 @@ At the very begining of my survey. I always try to make an uniform definition fo
 
 In the following, I try to quote several "definition" in other references.
 
-1. > Data sparsity refers to the difficulty in finding sufficient reliable similar users since in general the active users only rated a small portion of items[^5]
-2. > data sparsity problem occus in the setting of supervised statistical learning method, when some data from the test side is not present in the training dataset. [^6]
-3. >when the training data is relatively sparse in this domain, either because few observations are available for learning or because the underlying structure is complex, the bias inherent in popular pruning methods is inappropriate and they have a negative effect on predictive accuracy[^4].
-4. > One way to think of sparsity is how space is empty (60%), whereas 40% of space is dense, or filled. So good data looks like swiss cheese.  Big bubbles of nothing[^7]!
+1. Data sparsity refers to the difficulty in finding sufficient reliable similar users since in general the active users only rated a small portion of items[^5]
+2. data sparsity problem occus in the setting of supervised statistical learning method, when some data from the test side is not present in the training dataset. [^6]
+3. when the training data is relatively sparse in this domain, either because few observations are available for learning or because the underlying structure is complex, the bias inherent in popular pruning methods is inappropriate and they have a negative effect on predictive accuracy[^4].
+4. One way to think of sparsity is how space is empty (60%), whereas 40% of space is dense, or filled. So good data looks like swiss cheese.  Big bubbles of nothing[^7]!
 
 There exist quite a lot definition or understanding of data sparsity. As far as I have survied, I do not find a very persuasive and comprehensive work to clarify all of these definitions.
 
