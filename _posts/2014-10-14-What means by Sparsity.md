@@ -1,8 +1,11 @@
 ---
 layout: post
 title: What mean by sparsity?
-modified: 2014-10-14
-tags: [survey, sparsity]
+modified: {}
+tags:
+  - survey
+  - sparsity
+published: true
 ---
 
 What mean by sparsity?
@@ -43,9 +46,9 @@ At the very begining of my survey. I always try to make an uniform definition fo
 In the following, I try to quote several "definition" in other references.
 
 1. Data sparsity refers to the difficulty in finding sufficient reliable similar users since in general the active users only rated a small portion of items[^5]
-2. data sparsity problem occus in the setting of supervised statistical learning method, when some data from the test side is not present in the training dataset. [^6]
-3. when the training data is relatively sparse in this domain, either because few observations are available for learning or because the underlying structure is complex, the bias inherent in popular pruning methods is inappropriate and they have a negative effect on predictive accuracy[^4].
-4. One way to think of sparsity is how space is empty (60%), whereas 40% of space is dense, or filled. So good data looks like swiss cheese.  Big bubbles of nothing[^7]!
+1. data sparsity problem occus in the setting of supervised statistical learning method, when some data from the test side is not present in the training dataset. [^6]
+1. when the training data is relatively sparse in this domain, either because few observations are available for learning or because the underlying structure is complex, the bias inherent in popular pruning methods is inappropriate and they have a negative effect on predictive accuracy[^4].
+1. One way to think of sparsity is how space is empty (60%), whereas 40% of space is dense, or filled. So good data looks like swiss cheese.  Big bubbles of nothing[^7]!
 
 There exist quite a lot definition or understanding of data sparsity. As far as I have survied, I do not find a very persuasive and comprehensive work to clarify all of these definitions.
 
@@ -55,7 +58,7 @@ There exist quite a lot definition or understanding of data sparsity. As far as 
 [3]:http://math.stackexchange.com/questions/283006/what-is-a-sampling-density-why-is-the-sampling-density-proportional-to-n-fra
 
 
-##References
+## References
 
 
 [^1]: David Donoho, Sparsity in Modern High-Dimensional Statistics, SAMSI Astrostatistics. 20,9,2012
