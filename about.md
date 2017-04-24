@@ -12,7 +12,6 @@ I am a PhD candidate from the Hong Kong University of Science and Technology und
 **Contact:** bliuab at cse dot ust dot hk
 
 ---
-
 ## Research Interest
 
 - Transfer Learning
@@ -20,7 +19,6 @@ I am a PhD candidate from the Hong Kong University of Science and Technology und
 - Feature Selection
 
 ---
-
 ## Publication
 
 1. Bo Liu, Qiang Yang, A Survey of Stochastic Multi-Armed Bandit with its Applications, PQE survey, 2017. [[Slides](http://www.cse.ust.hk/~bliuab/files/PQE_BoLiu_MAB_print2.pdf)]
@@ -28,7 +26,6 @@ I am a PhD candidate from the Hong Kong University of Science and Technology und
 1. Ying Wei, Yangqiu Song, Yi Zhen, Bo Liu, Qiang Yang, Scalable heterogeneous translated hashing. KDD 2014.
 
 ---
-
 ## Experience
 
 - 2015-2017: Teaching Assistant Coordinator of CSE department.
