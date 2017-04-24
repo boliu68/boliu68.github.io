@@ -60,10 +60,11 @@ There exist quite a lot definition or understanding of data sparsity. As far as 
 ---
 ## References
 
-[^1]: David Donoho, Sparsity in Modern High-Dimensional Statistics, SAMSI Astrostatistics. 20,9,2012
-[^2]: Lee, J., Sun, M., & Lebanon, G. (2012). A comparative study of collaborative filtering algorithms. arXiv preprint arXiv:1205.3193.
-[^3]: Duchi, J., Jordan, M., & McMahan, B. (2013). Estimation, optimization, and parallelism when data is sparse. In Advances in Neural Information Processing Systems (pp. 2832-2840).
-[^4]: when the training data is relatively sparse in this domain, either because few observations are available for learning or because the underlying structure is complex, the bias inherent in popular pruning methods is inappropriate and they have a negative effect on predictive accuracy.
-[^5]: Guo, G. (2013, August). Improving the performance of recommender systems by alleviating the data sparsity and cold start problems. In Proceedings of the Twenty-Third international joint conference on Artificial Intelligence (pp. 3217-3218). AAAI Press.
-[^6]: Ricci, F., Rokach, L., & Shapira, B. (2011). Introduction to recommender systems handbook (pp. 1-35). Springer US.
-[^7]: http://www.quora.com/What-is-a-clear-explanation-of-data-sparsity
+1. David Donoho, Sparsity in Modern High-Dimensional Statistics, SAMSI Astrostatistics. 20,9,2012
+1. Lee, J., Sun, M., & Lebanon, G. (2012). A comparative study of collaborative filtering algorithms. arXiv preprint arXiv:1205.3193.
+1. Duchi, J., Jordan, M., & McMahan, B. (2013). Estimation, optimization, and parallelism when data is sparse. In Advances in Neural Information Processing Systems (pp. 2832-2840).
+1. when the training data is relatively sparse in this domain, either because few observations are available for learning or because the underlying structure is complex, the bias inherent in popular pruning methods is inappropriate and they have a negative effect on predictive accuracy.
+1. Guo, G. (2013, August). Improving the performance of recommender systems by alleviating the data sparsity and cold start problems. In Proceedings of the Twenty-Third international joint conference on Artificial Intelligence (pp. 3217-3218). AAAI Press.
+1. Ricci, F., Rokach, L., & Shapira, B. (2011). Introduction to recommender systems handbook (pp. 1-35). Springer US.
+1. http://www.quora.com/What-is-a-clear-explanation-of-data-sparsity
+
