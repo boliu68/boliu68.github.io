@@ -57,9 +57,8 @@ There exist quite a lot definition or understanding of data sparsity. As far as 
 [2]: http://en.wikipedia.org/wiki/Netflix_Prize
 [3]:http://math.stackexchange.com/questions/283006/what-is-a-sampling-density-why-is-the-sampling-density-proportional-to-n-fra
 
-
+---
 ## References
-
 
 [^1]: David Donoho, Sparsity in Modern High-Dimensional Statistics, SAMSI Astrostatistics. 20,9,2012
 [^2]: Lee, J., Sun, M., & Lebanon, G. (2012). A comparative study of collaborative filtering algorithms. arXiv preprint arXiv:1205.3193.
