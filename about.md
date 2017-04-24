@@ -33,9 +33,11 @@ I am a PhD candidate from the Hong Kong University of Science and Technology und
 ## Experience
 
 - 2015-2017: Teaching Assistant Coordinator of CSE department.
+
 - 2016-2017: Teaching Assistant of MSBD5001 & CSIT600D, Introduction to Big Data.
+
 - 2014-2016: Research Internship at Tencent.
-- Spring 2014: Teaching Assistant of 1029C, C
- Bridging Course.
+
+- Spring 2014: Teaching Assistant of 1029C, C Bridging Course.
 
 {% include footer.html %}
