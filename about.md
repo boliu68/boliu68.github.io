@@ -9,8 +9,7 @@ published: true
 
 I am a PhD candidate from the Hong Kong University of Science and Technology under the supervision of [Prof. Qiang Yang](http://www.cse.ust.hk/~qyang/). Before joining the HKUST, I obtained my bachelor degree from Nankai University.
 
-### Contact 
-bliuab at cse dot ust dot hk
+**Contact:** bliuab at cse dot ust dot hk
 
 ---
 
