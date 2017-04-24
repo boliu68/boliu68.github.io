@@ -1,27 +1,30 @@
 ---
-title: About
+layout: about
 permalink: about/
 profile: true
 published: true
 ---
 
 ## Biography
-
 I am a PhD candidate from the Hong Kong University of Science and Technology under the supervision of [Prof. Qiang Yang](http://www.cse.ust.hk/~qyang/). Before joining the HKUST, I obtained my bachelor degree from Nankai University.
 
-**Contact:** bliuab at cse dot ust dot hk
+**Contact** via bliuab at cse dot ust dot hk
 
-## Research Interest
+**Research Interest**
 
 - Transfer Learning
 - Reinforcement Learning & Mutli-Armed Bandit
 - Feature Selection
 
+---
+
 ## Publication
 
-- Bo Liu, Qiang Yang, A Survey of Stochastic Multi-Armed Bandit with its Applications, PQE survey, 2017. [[Slides](http://www.cse.ust.hk/~bliuab/files/PQE_BoLiu_MAB_print2.pdf)]
-- Kaixiang Mo, Bo Liu, Lei Xiao, Yong Li, Jie Jiang, Image Feature Learning for Cold Start Problem in Display Advertising. IJCAI 2015.
-- Ying Wei, Yangqiu Song, Yi Zhen, Bo Liu, Qiang Yang, Scalable heterogeneous translated hashing. KDD 2014.
+- **Bo Liu**, Qiang Yang, A Survey of Stochastic Multi-Armed Bandit with its Applications, PQE survey, 2017. [[Slides](http://www.cse.ust.hk/~bliuab/files/PQE_BoLiu_MAB_print2.pdf)]
+- Kaixiang Mo, **Bo Liu**, Lei Xiao, Yong Li, Jie Jiang, Image Feature Learning for Cold Start Problem in Display Advertising. IJCAI 2015.
+- Ying Wei, Yangqiu Song, Yi Zhen, **Bo Liu**, Qiang Yang, Scalable heterogeneous translated hashing. KDD 2014.
+
+---
 
 ## Experience
 

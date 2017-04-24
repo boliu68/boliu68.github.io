@@ -7,6 +7,10 @@ aboutPage: true
 markdown: kramdown
 highlighter: rouge
 
+kramdown:
+  input: GFM
+  hard_wrap: false
+
 paginate: 20
 baseurl: /
 domain_name: 'https://boliu68.github.io/'

@@ -1,13 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>Your New Jekyll Site</title>
-    <description>Blogging about stuffs</description>
-    <link>http://boliu68.github.io/</link>
-    <atom:link href="http://boliu68.github.io//feed.xml" rel="self" type="application/rss+xml" />
+    <title>Bo Liu's Blog</title>
+    <description>Learning, Experiencing and Writing</description>
+    <link>http://localhost:4000</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Savage&#39;s approach to research</title>
+        <title>Reinforcement learning versus bandit</title>
+        
+        
+          <description>&lt;h2 id=&quot;reinforcement-learning-versus-bandit&quot;&gt;Reinforcement Learning versus Bandit&lt;/h2&gt;
+
+</description>
+        
+        <pubDate>Mon, 13 Mar 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/Reinforcement-Learning-versus-Bandit/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/Reinforcement-Learning-versus-Bandit/</guid>
+      </item>
+    
+      <item>
+        <title>Notes on screening test for Lasso and Group Lasso?</title>
+        
+        
+          <description>&lt;h2 id=&quot;readlist&quot;&gt;ReadList:&lt;/h2&gt;
+
+</description>
+        
+        <pubDate>Sat, 10 Oct 2015 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2015/Screening-Test/</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/Screening-Test/</guid>
+      </item>
+    
+      <item>
+        <title>Savage's approach to research</title>
         
         
           <description>&lt;p&gt;Savage’s approach to research, via Mosteller（copy from Jon McAuliffe’s and Jun Liu’s webpage):&lt;/p&gt;
@@ -15,34 +41,8 @@
 </description>
         
         <pubDate>Thu, 10 Sep 2015 00:00:00 +0800</pubDate>
-        <link>http://boliu68.github.io//2015/Savage's%20approach%20to%20research/</link>
-        <guid isPermaLink="true">http://boliu68.github.io//2015/Savage's%20approach%20to%20research/</guid>
-      </item>
-    
-      <item>
-        <title>Notes on Sure Screening interaction selection</title>
-        
-        
-          <description>&lt;h4 id=&quot;lee-s-lozano-a-kambadur-p--xing-e-p-2015-april-an-efficient-nonlinear-regression-approach-for-genome-wide-detection-of-marginal-and-interacting-genetic-variations&quot;&gt;Lee, S., Lozano, A., Kambadur, P., &amp;amp; Xing, E. P. (2015, April). An Efficient Nonlinear Regression Approach for Genome-Wide Detection of Marginal and Interacting Genetic Variations.&lt;/h4&gt;
-
-</description>
-        
-        <pubDate>Tue, 08 Sep 2015 00:00:00 +0800</pubDate>
-        <link>http://boliu68.github.io//2015/Notes%20on%20Sure%20screening%20interaction%20selection/</link>
-        <guid isPermaLink="true">http://boliu68.github.io//2015/Notes%20on%20Sure%20screening%20interaction%20selection/</guid>
-      </item>
-    
-      <item>
-        <title>Readlist of Distributed Optimization Algorithm</title>
-        
-        
-          <description>&lt;p&gt;[1] Stephen Boyd, Neal Parikh, Eric Chu, Borja Peleato, and Jonathan Eckstein. Distributed optimization and statistical learning via the alternating direction method of multipliers. Foundations and Trend in Machine Learning, 3(1):1–122, 2011.&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Sun, 10 May 2015 00:00:00 +0800</pubDate>
-        <link>http://boliu68.github.io//2015/ReadList%20of%20Distributed%20Optimization%20Algorithms/</link>
-        <guid isPermaLink="true">http://boliu68.github.io//2015/ReadList%20of%20Distributed%20Optimization%20Algorithms/</guid>
+        <link>http://localhost:4000/2015/Savage's-approach-to-research/</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/Savage's-approach-to-research/</guid>
       </item>
     
       <item>
@@ -54,8 +54,8 @@
 </description>
         
         <pubDate>Wed, 11 Mar 2015 00:00:00 +0800</pubDate>
-        <link>http://boliu68.github.io//2015/differential%20privacy%20and%20machine%20learning/</link>
-        <guid isPermaLink="true">http://boliu68.github.io//2015/differential%20privacy%20and%20machine%20learning/</guid>
+        <link>http://localhost:4000/2015/differential-privacy-and-machine-learning/</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/differential-privacy-and-machine-learning/</guid>
       </item>
     
       <item>
@@ -67,8 +67,8 @@
 </description>
         
         <pubDate>Thu, 04 Dec 2014 00:00:00 +0800</pubDate>
-        <link>http://boliu68.github.io//2014/LR,%20Spark,%20SGD%20and%20Big%20Data/</link>
-        <guid isPermaLink="true">http://boliu68.github.io//2014/LR,%20Spark,%20SGD%20and%20Big%20Data/</guid>
+        <link>http://localhost:4000/2014/LR,-Spark,-SGD-and-Big-Data/</link>
+        <guid isPermaLink="true">http://localhost:4000/2014/LR,-Spark,-SGD-and-Big-Data/</guid>
       </item>
     
       <item>
@@ -81,21 +81,21 @@ This lists the paper recently I plan to read. The majority of the following pape
 </description>
         
         <pubDate>Wed, 19 Nov 2014 00:00:00 +0800</pubDate>
-        <link>http://boliu68.github.io//2014/CDCF%20Reading%20list/</link>
-        <guid isPermaLink="true">http://boliu68.github.io//2014/CDCF%20Reading%20list/</guid>
+        <link>http://localhost:4000/2014/CDCF-Reading-list/</link>
+        <guid isPermaLink="true">http://localhost:4000/2014/CDCF-Reading-list/</guid>
       </item>
     
       <item>
         <title>How to compile opencv on linux without root</title>
         
         
-          <description>&lt;h2 id=&quot;update-cmake&quot;&gt;update Cmake&lt;/h2&gt;
+          <description>&lt;p&gt;##update Cmake&lt;/p&gt;
 
 </description>
         
         <pubDate>Tue, 28 Oct 2014 00:00:00 +0800</pubDate>
-        <link>http://boliu68.github.io//2014/how%20to%20compile%20OpenCV%20without%20root/</link>
-        <guid isPermaLink="true">http://boliu68.github.io//2014/how%20to%20compile%20OpenCV%20without%20root/</guid>
+        <link>http://localhost:4000/2014/how-to-compile-OpenCV-without-root/</link>
+        <guid isPermaLink="true">http://localhost:4000/2014/how-to-compile-OpenCV-without-root/</guid>
       </item>
     
       <item>
@@ -107,8 +107,8 @@ This lists the paper recently I plan to read. The majority of the following pape
 </description>
         
         <pubDate>Tue, 14 Oct 2014 00:00:00 +0800</pubDate>
-        <link>http://boliu68.github.io//2014/What%20means%20by%20Sparsity%3F/</link>
-        <guid isPermaLink="true">http://boliu68.github.io//2014/What%20means%20by%20Sparsity%3F/</guid>
+        <link>http://localhost:4000/2014/What-means-by-Sparsity/</link>
+        <guid isPermaLink="true">http://localhost:4000/2014/What-means-by-Sparsity/</guid>
       </item>
     
   </channel>

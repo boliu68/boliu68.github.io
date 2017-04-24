@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Your New Jekyll Site - LR, Spark, SGD and Big Data</title>
+  <title>Bo Liu's Blog - LR, Spark, SGD and Big Data</title>
   <link rel="shortcut icon" href="/assets/images/favicon.ico">
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="alternate" type="application/rss+xml" title="My Blog" href="/rss.xml">
@@ -39,7 +39,7 @@
 
 <p>The so called big data, in this post, represents billions instance(10e9) and billions dimensions(10e8). No doubt that the dimension is very very sparse. On average, only 64 non-zero entries exist for each instance. Concerned about many issuse ^-^. I only talks about pseudo-cdoe as follows.</p>
 
-<pre><code>Spark_LR(dataset)
+<div class="highlighter-rouge"><pre class="highlight"><code>Spark_LR(dataset)
 #dataset: #instnaces * #dimension
 #parameters: #partitions,#parallelism
 1 Read data and split each line, repartition the dataset
@@ -55,10 +55,11 @@
 11 	para_rdd = data_rdd.MapPartitions(SGD(using sklearn))
 12	average all the parameters learnt by SGD
 </code></pre>
+</div>
 
 <p>The pseudo-code is very very simple. But it cost me a lot of time to make this work on billions instances. Based on some following experience, LR can handle billions-dataset on a cluster with 240 cpu cores and 640 GB memory in total. However, the disk space is also a bottleneck that I will metion later.</p>
 
-<h2 id="tips-and-experiences">Tips and experiences:</h2>
+<p>##Tips and experiences:</p>
 
 <p><strong>Line 1</strong>: repartition() function in pyspark results in a more balance partitions. However, repartition requires too much computation, memory as well as disk for shuffle. After several attempts, I will never utilize repartition() directly on such large dataset.</p>
 
@@ -70,7 +71,7 @@
 
 <p><strong>Line 11</strong>: I just call sklearn.linear_model.SGDClassifier to do SGD in each partitions. No doubt that you can implement one yourself which should be more fun.</p>
 
-<p>One of biggest challenge here is that the high-dimension(10e8) parameters vectors obtained from each partitions has to be averaged. Calling sum(), reduce() lead to calling a collect(). This means, in my experiment, collecting 100GB sparse vector back to master. Obviously, this is not acceptable. As a result, for <script type="math/tex">w_i</script> obtain in partition <script type="math/tex">i</script>, I partition <script type="math/tex">w_i</script> to #parallesim. For instance <script type="math/tex">w_i \rightarrow (1,w\_{i,1}), (2,w\_{i,2})\dots(k,w\_{i,k})</script>. <script type="math/tex">k</script> denotes the k which is identical for all the partitions. Afterwards, reduceByKey is called to sum up all the resul and only one parameter vector is collected back.</p>
+<p>One of biggest challenge here is that the high-dimension(10e8) parameters vectors obtained from each partitions has to be averaged. Calling sum(), reduce() lead to calling a collect(). This means, in my experiment, collecting 100GB sparse vector back to master. Obviously, this is not acceptable. As a result, for <script type="math/tex">w_i</script> obtain in partition <script type="math/tex">i</script>, I partition <script type="math/tex">w_i</script> to #parallesim. For instance <script type="math/tex">w_i \rightarrow (1,w_{i,1}), (2,w_{i,2})\dots(k,w_{i,k})</script>. <script type="math/tex">k</script> denotes the k which is identical for all the partitions. Afterwards, reduceByKey is called to sum up all the resul and only one parameter vector is collected back.</p>
 
 <p>Furthermore, a serious side effect is that we change the key in doing the above trick. And each time, for instance, 100GB(400 partitions * 300MB sparse vector) hash to be shuffled and write to disk. For really many times, my disk is running out. I try to compress the shuffle by flush the shuffle files to hdfs. But both does not work well.</p>
 
@@ -91,15 +92,15 @@
 </article>
 <footer id="post-meta" class="clearfix">
     <a href="http://twitter.com/YourTwitterUsername">
-        <img class="avatar" src="/assets/images/avatar.png">
+        <img class="avatar" src="/assets/images/boliu.jpg">
         <div>
             <span class="dark">Bo Liu</span>
-            <span>Blogging about stuffs</span>
+            <span>Learning, Experiencing and Writing</span>
         </div>
     </a>
 
     <section id="sharing">
-        <a class="twitter" href="https://twitter.com/intent/tweet?text=http://boliu68.github.io//2014/LR,%20Spark,%20SGD%20and%20Big%20Data/ - LR, Spark, SGD and Big Data by @YourTwitterUsername"><span class="icon-twitter"> Tweet</span></a>
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=https://boliu68.github.io//2014/LR,-Spark,-SGD-and-Big-Data/ - LR, Spark, SGD and Big Data by @YourTwitterUsername"><span class="icon-twitter"> Tweet</span></a>
 
 <a class="facebook" href="#" onclick="
     window.open(
@@ -113,48 +114,26 @@
 
 <!-- Disqus comments -->
 
+    <div class="archive readmore">
+        <h3>Comments</h3>
+        <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'boliu68githubio';
+        var disqus_developer = 0; // developer mode is on
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+    </div>
+
 
 <!-- Archive post list -->
-
-    <ul id="post-list" class="archive readmore">
-        <h3>Read more</h3>
-        
-            <li>
-                <a href="/2015/Savage's%20approach%20to%20research/">Savage's approach to research<aside class="dates">Sep 10</aside></a>
-            </li>
-        
-            <li>
-                <a href="/2015/Notes%20on%20Sure%20screening%20interaction%20selection/">Notes on Sure Screening interaction selection<aside class="dates">Sep 08</aside></a>
-            </li>
-        
-            <li>
-                <a href="/2015/ReadList%20of%20Distributed%20Optimization%20Algorithms/">Readlist of Distributed Optimization Algorithm<aside class="dates">May 10</aside></a>
-            </li>
-        
-            <li>
-                <a href="/2015/differential%20privacy%20and%20machine%20learning/">Differential Privacy and Machine Learning<aside class="dates">Mar 11</aside></a>
-            </li>
-        
-            <li>
-                <a href="/2014/LR,%20Spark,%20SGD%20and%20Big%20Data/">LR, Spark, SGD and Big Data<aside class="dates">Dec 04</aside></a>
-            </li>
-        
-            <li>
-                <a href="/2014/CDCF%20Reading%20list/">Readlist of Cross-Domain Collaborative Filtering<aside class="dates">Nov 19</aside></a>
-            </li>
-        
-            <li>
-                <a href="/2014/how%20to%20compile%20OpenCV%20without%20root/">How to compile opencv on linux without root<aside class="dates">Oct 28</aside></a>
-            </li>
-        
-            <li>
-                <a href="/2014/What%20means%20by%20Sparsity%3F/">What mean by sparsity?<aside class="dates">Oct 14</aside></a>
-            </li>
-        
-    </ul>
-
-
-
 
 
   </section>
@@ -173,7 +152,7 @@
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-XXXXXXXX-X', 'auto');
+    ga('create', 'UA-67871118-1', 'auto');
     ga('send', 'pageview');
   </script>
 </body>
