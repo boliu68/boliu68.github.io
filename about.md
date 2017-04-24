@@ -5,6 +5,37 @@ profile: true
 published: true
 ---
 
-I am a PhD candidate from Computer Science & Engineering department, the Hong Kong University of Science and Technology. My research interests include transfer learning, reinforcement learning, and feature selection. I am interested in applications including recommender system, dialogue system, bioinformatics, and etc. Feel free to email (6liubo8 at gmail dot com) me for discussion.
+## Biography
+
+I am a PhD candidate from the Hong Kong University of Science and Technology under the supervision of [Prof. Qiang Yang](http://www.cse.ust.hk/~qyang/). Before joining the HKUST, I obtained my bachelor degree from Nankai University.
+
+### Contact 
+bliuab at cse dot ust dot hk
+
+---
+
+## Research Interest
+
+- Transfer Learning
+- Reinforcement Learning & Mutli-Armed Bandit
+- Feature Selection
+
+---
+
+## Publication
+
+1. Bo Liu, Qiang Yang, A Survey of Stochastic Multi-Armed Bandit with its Applications, PQE survey, 2017. [[Slides](http://www.cse.ust.hk/~bliuab/files/PQE_BoLiu_MAB_print2.pdf)]
+1. Kaixiang Mo, Bo Liu, Lei Xiao, Yong Li, Jie Jiang, Image Feature Learning for Cold Start Problem in Display Advertising. IJCAI 2015.
+1. Ying Wei, Yangqiu Song, Yi Zhen, Bo Liu, Qiang Yang, Scalable heterogeneous translated hashing. KDD 2014.
+
+---
+
+## Experience
+
+- 2015-2017: Teaching Assistant Coordinator of CSE department.
+- 2016-2017: Teaching Assistant of MSBD5001 & CSIT600D, Introduction to Big Data.
+- 2014-2016: Research Internship at Tencent.
+- Spring 2014: Teaching Assistant of 1029C, C
+ Bridging Course.
 
 {% include footer.html %}
