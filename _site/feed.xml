@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Bo Liu's Blog</title>
+    <description>Learning, Experiencing and Writing</description>
+    <link>http://localhost:4000</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Reinforcement learning versus bandit</title>
+        
+        
+          <description>&lt;h2 id=&quot;reinforcement-learning-versus-bandit&quot;&gt;Reinforcement Learning versus Bandit&lt;/h2&gt;
+
+</description>
+        
+        <pubDate>Mon, 13 Mar 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/Reinforcement-Learning-versus-Bandit/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/Reinforcement-Learning-versus-Bandit/</guid>
+      </item>
+    
+      <item>
+        <title>Savage's approach to research</title>
+        
+        
+          <description>&lt;p&gt;Savage’s approach to research, via Mosteller（copy from Jon McAuliffe’s and Jun Liu’s webpage):&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 10 Sep 2015 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2015/Savage's-approach-to-research/</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/Savage's-approach-to-research/</guid>
+      </item>
+    
+      <item>
+        <title>Differential Privacy and Machine Learning</title>
+        
+        
+          <description>&lt;p&gt;As a begining of my research, I survey the topics on differential privacy and machine learning. The basic structure of this slide is arised from [1].&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 11 Mar 2015 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2015/differential-privacy-and-machine-learning/</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/differential-privacy-and-machine-learning/</guid>
+      </item>
+    
+      <item>
+        <title>LR, Spark, SGD and Big Data</title>
+        
+        
+          <description>&lt;p&gt;Logistic Regression(&lt;a href=&quot;http://en.wikipedia.org/wiki/Logistic_regression&quot;&gt;LR&lt;/a&gt;) serves as a simple but competitive algorithm for classifiation. LR is effective to train and widely utilized online for recommendation, ads and rankings. In this blog, I will demonstrate my experience of LR algorithm based on Stochastic Gradient Descent(&lt;a href=&quot;http://en.wikipedia.org/wiki/Stochastic_gradient_descent&quot;&gt;SGD&lt;/a&gt;), &lt;a href=&quot;https://spark.apache.org/&quot;&gt;Spark&lt;/a&gt; for quite big dataset. The method is based on python. Some python packages such as numpy, scipy as well as sklearn is utlized for efficiency. It will not be difficult to transfer to other platform, in my opinion.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 04 Dec 2014 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2014/LR,-Spark,-SGD-and-Big-Data/</link>
+        <guid isPermaLink="true">http://localhost:4000/2014/LR,-Spark,-SGD-and-Big-Data/</guid>
+      </item>
+    
+      <item>
+        <title>How to compile opencv on linux without root</title>
+        
+        
+          <description>&lt;p&gt;##update Cmake&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 28 Oct 2014 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2014/how-to-compile-OpenCV-without-root/</link>
+        <guid isPermaLink="true">http://localhost:4000/2014/how-to-compile-OpenCV-without-root/</guid>
+      </item>
+    
+      <item>
+        <title>What mean by sparsity?</title>
+        
+        
+          <description>&lt;p&gt;What mean by sparsity?&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 14 Oct 2014 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2014/What-means-by-Sparsity/</link>
+        <guid isPermaLink="true">http://localhost:4000/2014/What-means-by-Sparsity/</guid>
+      </item>
+    
+  </channel>
+</rss>
