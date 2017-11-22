@@ -25,6 +25,7 @@ I am a PhD candidate from the Hong Kong University of Science and Technology und
 - **Bo Liu**, Qiang Yang, A Survey of Stochastic Multi-Armed Bandit with its Applications, PQE survey, 2017. [[Slides](http://www.cse.ust.hk/~bliuab/files/PQE_BoLiu_MAB_print2.pdf)]
 - Kaixiang Mo, **Bo Liu**, Lei Xiao, Yong Li, Jie Jiang, Image Feature Learning for Cold Start Problem in Display Advertising. IJCAI 2015.
 - Ying Wei, Yangqiu Song, Yi Zhen, **Bo Liu**, Qiang Yang, Scalable heterogeneous translated hashing. KDD 2014.
+- Li, Xiang<sup>*</sup>, Bo Liu<sup>*</sup>, Xin-Le Li<sup>*</sup>, Yi-Xiang Li, Ming-Zhu Sun, Dong-Yan Chen, Xin Zhao, and Xi-Zeng Feng. SiO2 nanoparticles change colour preference and cause Parkinson's-like behaviour in zebrafish. Scientific reports 4 (2014): 3810. [* equally contributed]
 
 ---
 
