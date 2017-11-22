@@ -20,6 +20,7 @@ I am a PhD candidate from the Hong Kong University of Science and Technology und
 
 ## Publication
 
+- **Bo Liu**, Ying Wei, Yu Zhang, Zhixian Yan, Qiang Yang, Transferable Contextual Bandit for Cross-Domain Recommendation. AAAI 2018. [to appear]
 - **Bo Liu**, Ying Wei, Yu Zhang, Qiang Yang, Deep Neural Networks for High Dimension, Low Sample Size Data. IJCAI 2017. [[pdf](https://www.ijcai.org/proceedings/2017/0318.pdf)]
 - **Bo Liu**, Qiang Yang, A Survey of Stochastic Multi-Armed Bandit with its Applications, PQE survey, 2017. [[Slides](http://www.cse.ust.hk/~bliuab/files/PQE_BoLiu_MAB_print2.pdf)]
 - Kaixiang Mo, **Bo Liu**, Lei Xiao, Yong Li, Jie Jiang, Image Feature Learning for Cold Start Problem in Display Advertising. IJCAI 2015.
